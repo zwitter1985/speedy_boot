@@ -3,6 +3,7 @@ package org.wu.framework.common.service.impl;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.wu.framework.common.query.Query;
 import org.wu.framework.common.service.BaseService;
 
 /**
@@ -16,5 +17,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T> extends ServiceImpl<M, 
      * 获取分页对象
      * @param query   分页参数
      */
-    protected IPage<T> getPage()
+    protected IPage<T> getPage(Query query){
+
+    }
 }
